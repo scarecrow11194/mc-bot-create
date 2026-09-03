@@ -12,12 +12,12 @@ server.listen(PORT, () => {
 });
 
 
-function createBot() {
     const client = bedrock.createClient({
         host: 'ezzz-BS31.aternos.me',
         port: 49761,
         username: 'AFK_Bot_Bedrock',
-        offline: true 
+        offline: true,
+        version: '1.26.45.1'
     });
 
     client.on('join', () => {
